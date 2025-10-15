@@ -1,4 +1,7 @@
 # netskope-client-log-summarizer
+A Python script that parses Netskope Client debug logs (nsdebuglog*.log) to extract processes and their outbound destination hosts, and optionally performs URL category lookups using the Netskope URL Lookup API.
+
+It’s designed to help identify and understand the processes and destinations of traffic originating from endpoints protected by Netskope, where custom traffic steering, SSL decryption, or Certificate Pinned App configurations might be relevant.
 
 ## Features
 

@@ -14,7 +14,9 @@ It’s designed to help identify and understand the processes and destinations o
 ## Usage
 
 ## Notes
-Since the script summarizes traffic steered through Netskope, any traffic configured as a steering bypass for the Netskope Client will be excluded from the output.
+- Since the script summarizes traffic steered through Netskope, any observed traffic already configured as a steering bypass for the Netskope Client will be excluded from the output.
+- The Netskope [URL Lookup API](https://docs.netskope.com/en/url-lookup), available to all Netskope Secure Web Gateway customers, supports up to 100 URLs per request and a total of 1,000 URLs per day. The script can process more than 100 lookups by batching requests, warns the user about the daily limit, and includes an option to filter out browser traffic that may not be relevant.
+- The URL Lookup API may not be enabled for all Netskope tenants. If the API endpoint is unavailable when generating API credentials, contact your account representative or technical support team for assistance.
 
 ## License
 Licensed under MIT — free to use, modify, and share, with no warranty.

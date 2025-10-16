@@ -4,6 +4,12 @@ A Python script that parses Netskope Client debug logs (nsdebuglog*.log) to extr
 It’s designed to help identify and understand the processes and destinations of traffic originating from endpoints protected by Netskope, where custom traffic steering, SSL decryption, or Certificate Pinned App configurations might be relevant.
 
 ## Features
+- Parses multiple nsdebuglog*.log files
+- Extracts process names and destination hosts, including ports
+- Excludes traffic from Netskope Client processes
+- Can perform URL category lookups using the Netskope URL Lookup API
+  - Optionally filters out browser traffic, particularly valuable if limits for the above API may be exceeded
+- Outputs a detailed summary of each process and their respective traffic destinations 
 
 ## Usage
 

@@ -11,6 +11,15 @@ It’s designed to help identify and understand the processes and destinations o
   - Optionally filters out browser traffic, particularly valuable if limits for the above API may be exceeded
 - Outputs a detailed summary of each process and their respective traffic destinations 
 
+## Screenshots
+**Script**
+
+<img src="https://i.imgur.com/rHT2Kf7.png" style="width:50%">
+
+**Summary Output**
+
+<img src="https://i.imgur.com/BEdkBvU.png" style="width:50%">
+
 ## Requirements
 - Python 3.8 or higher
 - `requests`

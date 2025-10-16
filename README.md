@@ -11,7 +11,17 @@ It’s designed to help identify and understand the processes and destinations o
   - Optionally filters out browser traffic, particularly valuable if limits for the above API may be exceeded
 - Outputs a detailed summary of each process and their respective traffic destinations 
 
+## Requirements
+- Python 3.8 or higher
+- `requests`
+- `urllib3`
+- Netskope API token with URL Lookup endpoint permissions
+
 ## Usage
+1. Clone or download this repository.
+2. Copy the script (netskope_log_summarizer.py) into a directory containing one or more Netskope Client debug logs (nsdebuglog*.log)
+3. Edit the script to match your tenant and API token information.
+4. `python3 netskope_log_summarizer.py`
 
 ## Notes
 - Since the script summarizes traffic steered through Netskope, any observed traffic already configured as a steering bypass for the Netskope Client will be excluded from the output.
